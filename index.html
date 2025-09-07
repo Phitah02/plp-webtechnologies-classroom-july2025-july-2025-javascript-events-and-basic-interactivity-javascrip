@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page with JavaScript</h1>
+    </header>
+
+    <section id="event-handling">
+        <h2>Part 1: Event Handling</h2>
+        <p>Click the button below to see event handling in action.</p>
+        <button id="event-btn">Click Me!</button>
+        <p id="event-message"></p>
+    </section>
+
+    <section id="interactive-elements">
+        <h2>Part 2: Interactive Elements</h2>
+
+        <div class="element">
+            <h3>Light/Dark Mode Toggle</h3>
+            <button id="toggle-mode">Toggle Mode</button>
+        </div>
+
+        <div class="element">
+            <h3>Counter</h3>
+            <button id="decrement">-</button>
+            <span id="counter">0</span>
+            <button id="increment">+</button>
+        </div>
+
+        <div class="element">
+            <h3>Collapsible FAQ</h3>
+            <div class="faq">
+                <h4 class="faq-question">What is JavaScript?</h4>
+                <p class="faq-answer">JavaScript is a programming language used for web development.</p>
+            </div>
+            <div class="faq">
+                <h4 class="faq-question">Why use events?</h4>
+                <p class="faq-answer">Events make web pages interactive by responding to user actions.</p>
+            </div>
+        </div>
+
+        <div class="element">
+            <h3>Dropdown Menu</h3>
+            <button id="dropdown-btn">Select Option</button>
+            <ul id="dropdown-menu" class="hidden">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+            </ul>
+        </div>
+
+        <div class="element">
+            <h3>Tabbed Interface</h3>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div id="tab1" class="tab-content active">Content for Tab 1</div>
+            <div id="tab2" class="tab-content">Content for Tab 2</div>
+            <div id="tab3" class="tab-content">Content for Tab 3</div>
+        </div>
+    </section>
+
+    <section id="form-validation">
+        <h2>Part 3: Form Validation</h2>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="name-error"></span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="email-error"></span><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span class="error" id="password-error"></span><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

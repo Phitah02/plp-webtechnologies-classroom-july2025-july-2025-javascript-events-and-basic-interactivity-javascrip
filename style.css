@@ -1,0 +1,197 @@
+/* style.css - Basic styling for Interactive Web Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+.element {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#counter {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+}
+
+#dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dropdown-menu li:hover {
+    background-color: #e0e0e0;
+}
+
+.hidden {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode section {
+    border-color: #555;
+    background-color: #444;
+}
+
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode button {
+    background-color: #555;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
+
+body.dark-mode .faq-question {
+    background-color: #555;
+}
+
+body.dark-mode .faq-answer {
+    background-color: #666;
+}
+
+body.dark-mode #dropdown-menu {
+    background-color: #555;
+    border-color: #777;
+}
+
+body.dark-mode #dropdown-menu li:hover {
+    background-color: #777;
+}
+
+body.dark-mode .tab-btn {
+    background-color: #555;
+}
+
+body.dark-mode .tab-btn.active {
+    background-color: #007bff;
+}
+
+body.dark-mode .tab-content {
+    background-color: #555;
+}
+
+body.dark-mode input {
+    background-color: #666;
+    color: #fff;
+    border-color: #777;
+}
